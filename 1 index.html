@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Selamat Ulang Tahun!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <h1>Selamat Ulang Tahun, <span id="nama">Nama Teman</span>! 🎉</h1>
+
+    <img id="foto" src="https://i.pravatar.cc/200" alt="Foto Teman" />
+
+    <!-- Kue & Lilin -->
+    <div id="cakeBox">
+      <div id="cake"></div>
+      <div id="candle">
+        <div id="flame"></div>
+      </div>
+    </div>
+
+    <button id="blowBtn">Tiup Lilin</button>
+
+    <!-- Mini-Game -->
+    <div id="miniGame" style="display:none;">
+      <p>Mini-Game: Tebak angka 1–10</p>
+      <input type="number" id="guess" min="1" max="10" placeholder="Angka?" />
+      <button id="submitGuess">Tebak!</button>
+      <p id="resultMini"></p>
+    </div>
+
+    <p id="wish">Semoga panjang umur, sehat selalu, dan semua impian tercapai!</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
